@@ -4,8 +4,24 @@ This Flask application for Docker requires:
 *  Please edit the Docker file an insert an API Key and API endpoint
 ## Please see the README file for how to build run this app in Docker 
 
-## To run as a standalone app:
+## To run as a standalone app in linux/wsl:
 ### Install python and from a command line run:
 * pip install -r requirements.txt
 * export FLASK_APP=texthelper.py
+* export FLASK_ENV=development
+* export OPENAI_API_KEY=<Insert your API Key here>
+* export OPENAI_API_BASE=<Insert your API endpoint. It should look something like: https://nrknordopenai.openai.>ENV OPENAI_API_TYPE=azure
+* export OPENAI_API_VERSION=2022-12-01 
 * flask run
+
+## To run as a standalone app in PowerShell for windows:
+### Install python and from a command line run:
+* pip install -r requirements.txt
+* $env:FLASK_APP='texthelper.py'
+* $env:FLASK_ENV='development'
+* $env:OPENAI_API_KEY='<Insert your API Key here>'
+* $env:OPENAI_API_BASE='<Insert your API endpoint. It should look something like: https://nrknordopenai.op>'
+* $env:OPENAI_API_VERSION='2022-12-01'
+* python -m flask run
+
+## open teksthjelper in a local browser http://127.0.0.1:5000
