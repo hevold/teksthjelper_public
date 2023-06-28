@@ -14,6 +14,8 @@
 * export OPENAI_API_TYPE=azure
 * export OPENAI_API_VERSION=2022-12-01 
 * flask run
+### Open teksthjelper in a local browser http://127.0.0.1:5000
+
 
 ## To run as a standalone app in PowerShell for windows:
 ### Install python and from a command line run:
@@ -26,4 +28,4 @@
 * $env:OPENAI_API_VERSION='2022-12-01'
 * python -m flask run
 
-## open teksthjelper in a local browser http://127.0.0.1:5000
+### Open teksthjelper in a local browser http://127.0.0.1:5000
