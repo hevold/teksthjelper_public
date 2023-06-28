@@ -10,7 +10,8 @@ This Flask application for Docker requires:
 * export FLASK_APP=texthelper.py
 * export FLASK_ENV=development
 * export OPENAI_API_KEY=<Insert your key here>
-* export OPENAI_API_BASE=<Insert your API endpoint. It should look something like: https://nrknordopenai.openai.>ENV OPENAI_API_TYPE=azure
+* export OPENAI_API_BASE=<Insert your API endpoint. Something like: https://nrknordopenai.openai.azure.com/>
+* export OPENAI_API_TYPE=azure
 * export OPENAI_API_VERSION=2022-12-01 
 * flask run
 
@@ -20,7 +21,8 @@ This Flask application for Docker requires:
 * $env:FLASK_APP='texthelper.py'
 * $env:FLASK_ENV='development'
 * $env:OPENAI_API_KEY='<Insert your key here>'
-* $env:OPENAI_API_BASE='<Insert your API endpoint. It should look something like: https://nrknordopenai.op>'
+* $env:OPENAI_API_BASE='<Insert your API endpoint.Something like: https://nrknordopenai.op>'
+* $env:OPENAI_API_TYPE=azure
 * $env:OPENAI_API_VERSION='2022-12-01'
 * python -m flask run
 
